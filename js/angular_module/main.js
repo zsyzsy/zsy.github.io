@@ -3,39 +3,32 @@
  */
 
 var appModule = angular.module('scotchApp', ['ngRoute']);
-
-// configure our routes
 appModule.config(function($routeProvider) {
     $routeProvider
-    // route for the home page
-        .when('/home', {
+        .when('/', {
             templateUrl : 'pages/home.html',
             controller  : 'mainController'
         })
 
-        // route for the about page
         .when('/about', {
             templateUrl : 'pages/about.html',
             controller  : 'aboutController'
         })
 
-        // route for the contact page
         .when('/contact', {
             templateUrl : 'pages/contact.html',
             controller  : 'contactController'
         })
 
-        .otherwise('/home');
+        .otherwise('/');
 });
 
 var mainCtrl = function($scope){
-    $scope.message = 'Everyone come and see how good I look!';
 };
 
 var aboutCtrl = function($scope,$rootScope){
-    $scope.message = 'Look! I am an about page.';
     $rootScope.data = {
-        current: "1" // 1代表张三，2代表李四，3代表王五
+        current: "1" // 默认为1
     };
     $rootScope.actions =
     {
@@ -46,7 +39,6 @@ var aboutCtrl = function($scope,$rootScope){
 };
 
 var contactCtrl = function($scope){
-    $scope.message = 'Contact us! JK. This is just a demo.';
 };
 
 
