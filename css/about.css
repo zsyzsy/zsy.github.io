@@ -1,0 +1,82 @@
+.about_content{
+    background: url(../images/bg-1.jpg) no-repeat;
+    overflow: hidden;
+}
+.about_content .about_box{
+    background: rgba(0, 0, 0, 0.85);
+    height: 500px;
+    color: white;
+}
+.about_box ul {
+    max-width: 620px;
+    margin: 0 auto;
+}
+.about_content ul li{
+    float: left;
+    margin-right: 0.5em;
+    padding:1.5em;
+    color: white;
+}
+.about_content ul li:hover{
+    cursor: pointer;
+    background: #17e7a4;
+}
+.active {
+    background: #17e7a4;
+}
+
+.Head_portrait{
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+}
+.Head_portrait img{
+    border: 10px solid #aee2d9;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.brief_introduction{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+.Job_time{
+    margin-top:20px;
+}
+.Job_time .col-sm-4 {
+    text-align: right;
+}
+.Job_time h1{
+    font-size: 100px;
+    color: #17e7a4;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: .7;
+}
+.Job_time .position {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+}
+.Job_time h4{
+    line-height: 2rem;
+}
+/*项目*/
+.xiangmu h1{
+    text-shadow: 1px 2px #080808, 2px 4px #586361;
+    text-align: center;
+}
+.experience {
+    margin-top: 20px;
+}
+.experience h1 a{
+    color: #17e7a4;
+}
+.experience h1 a:hover{
+    text-decoration:underline;
+}
+.experience p{
+    line-height: 1.5rem;
+}

@@ -1,0 +1,38 @@
+.title_tj {
+    font: 18px "微软雅黑", Arial, Helvetica, sans-serif;
+    color: #444;
+    font-weight: bold;
+    background: url(../images/h_line.jpg) repeat-x 20px center;
+}
+.title_tj p{
+    margin: 0;
+    width: 90px;
+    background: white;
+}
+.title_tj span{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

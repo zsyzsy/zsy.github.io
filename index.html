@@ -1,13 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="scotchApp">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--自定义Alex字体样式-->
+    <link rel="stylesheet" href="webfontkit/specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="webfontkit/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
-的数据库表vjdsjvj 看偶的是vbsd 东方既白vjfdjbvjfdkj 快递费吧vkfdbj 开发的vjbdf
+<body ng-controller="mainController">
+    <div class="banner col-sm-12">
+        <div class="col-sm-2"></div>
+=        <div class="banner_left col-sm-4"  id="myContent">
+            <p id="contentToWrite" style="display: none">
+                如果真心只会换来心碎,<br/>
+                宁愿换一季落花,<br/>
+                就算凋零也要芳香远扬,<br/>
+                不让心事那么孤单就破碎.<br/>
+                这个阳光灿烂的日子,<br/>
+                珍藏所有痴情岁月的无奈,<br/>
+                用点点微笑渲染出一片明媚的蓝空.<br/>
+            </p>
+        </div>
+        <div class="banner_right col-sm-6">
+            <div class="avatar">
+                <a href="#/about">
+                    <span class="head">ZhangShiyu</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12" style="background: white">
+        <!--<div class="index_content">-->
+            <nav class="navbar col-sm-12">
+                <div class="col-sm-12">
+                    <div class="col-sm-1"></div>
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="#/home" ><i class="fa fa-home"></i>首页</a><br/>
+                        <li><a href="#/about"><i class="fa fa-shield"></i>关于我</a><br/>
+                        <li><a href="#/Life"><i class="fa fa-comment"></i>慢生活</a><br/>
+                        <li><a href="#/Doing"><i class="fa fa-comment"></i>碎言碎语</a><br/>
+                        <li><a href="#/Learn"><i class="fa fa-comment"></i>学无止境</a><br/>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="main">
+                <div ng-view></div>
+            </div>
+        </div>
+    <!--</div>-->
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/angular_module/angular.min.js"></script>
+<script src="js/angular_module/angular-route.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/angular_module/main.js"></script>
+<!--<script src="js/home.js"></script>-->
+    <script>
+        var charIndex = -1;
+        var stringLength = 0;
+        var inputText;
+        function writeContent(init){
+            if(init){
+                inputText = document.getElementById('contentToWrite').innerHTML;
+            }
+            if(charIndex==-1){
+                charIndex = 0;
+                stringLength = inputText.length;
+            }
+            var initString = document.getElementById('myContent').innerHTML;
+            initString = initString.replace(/<SPAN.*$/gi,"");
+
+            var theChar = inputText.charAt(charIndex);
+            var nextFourChars = inputText.substr(charIndex,4);
+            if(nextFourChars=='<br>' || nextFourChars=='<br>'){
+                theChar  = '<br>';
+                charIndex+=3;
+            }
+            initString = initString + theChar/* + "<span id='blink'>_</span>"*/;
+            document.getElementById('myContent').innerHTML = initString;
+            charIndex = charIndex/1 +1;
+
+            if(charIndex<=stringLength){
+                setTimeout('writeContent(false)',150);
+            }else{
+                blinkSpan();
+            }
+        }
+        var currentStyle = 'inline';
+        function blinkSpan(){
+            if(currentStyle=='inline'){
+                currentStyle='none';
+            }else{
+                currentStyle='inline';
+            }
+            setTimeout('blinkSpan()',1000);
+        }
+        writeContent(true);
+    </script>
 
 </body>
-
 </html>
