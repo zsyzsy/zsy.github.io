@@ -10,13 +10,13 @@
     <div class="col-sm-2"></div>
     <div class="col-sm-8 about_box">
         <ul>
-            <!--<li ng-class="{ 'active' : data.current == 1 }" ng-click="actions.setCurrent(1)">简介</li>-->
-            <li ng-class="{ 'active' : data.current == 2 }" ng-click="actions.setCurrent(2)">项目</li>
-            <li ng-class="{ 'active' : data.current == 3 }" ng-click="actions.setCurrent(3)">技能</li>
-            <li ng-class="{ 'active' : data.current == 4 }" ng-click="actions.setCurrent(4)">教育</li>
-            <li ng-class="{ 'active' : data.current == 5 }" ng-click="actions.setCurrent(5)">实习</li>
-            <li ng-class="{ 'active' : data.current == 6 }" ng-click="actions.setCurrent(6)">供职</li>
-            <li ng-class="{ 'active' : data.current == 7 }" ng-click="actions.setCurrent(7)">联系</li>
+            <li ng-class="{ 'active' : data.current == 1 }" ng-click="actions.setCurrent(1)">简介</li>
+            <!--<li ng-class="{ 'active' : data.current == 2 }" ng-click="actions.setCurrent(2)">项目</li>-->
+            <!--<li ng-class="{ 'active' : data.current == 3 }" ng-click="actions.setCurrent(3)">技能</li>-->
+            <!--<li ng-class="{ 'active' : data.current == 4 }" ng-click="actions.setCurrent(4)">教育</li>-->
+            <!--<li ng-class="{ 'active' : data.current == 5 }" ng-click="actions.setCurrent(5)">实习</li>-->
+            <!--<li ng-class="{ 'active' : data.current == 6 }" ng-click="actions.setCurrent(6)">供职</li>-->
+            <!--<li ng-class="{ 'active' : data.current == 7 }" ng-click="actions.setCurrent(7)">联系</li>-->
         </ul>
         <!--介绍-->
         <!--<div ng-if="data.current == 1" class="col-sm-12">-->
@@ -38,29 +38,81 @@
             <!--</div>-->
         <!--</div>-->
         <!--项目-->
-        <div ng-if="data.current == 1" class="col-sm-12">
-            <div class="xiangmu"><h1>项目经验</h1></div>
-            <div class="col-sm-12 experience">
-                <div class="col-sm-6">
-                    <h1><a href="">电商网站</a></h1>
-                    <p>负责网站界面还原、node+mysql搭建数据进行页面交互</p>
-                </div>
-                <div class="col-sm-6">
-                    <h1><a href="">滨州检务综合分析管理系统</a></h1>
-                    <p>负责系统界面、ECharts图形、调用finereport自动生成表格和图形、</p>
-                </div>
-            </div>
-            <div class="col-sm-12 experience">
-                <div class="col-sm-6">
-                    <h1><a href="">广元司法干预活动通报</a></h1>
-                    <p>负责系统界面还原、处理IE6+浏览器的兼容性</p>
-                </div>
-                <div>
-                    <h1><a href="">电子卷宗管理系统</a></h1>
-                    <p>负责系统界面还原、页面交互</p>
-                </div>
+        <!--<div ng-if="data.current == 2" class="col-sm-12">-->
+            <!--<div class="xiangmu"><h1>项目经验</h1></div>-->
+            <!--<div class="col-sm-12 experience">-->
+                <!--<div class="col-sm-6">-->
+                    <!--<h1><a href="">电商网站</a></h1>-->
+                    <!--<p>负责网站界面还原、node+mysql搭建数据进行页面交互</p>-->
+                <!--</div>-->
+                <!--<div class="col-sm-6">-->
+                    <!--<h1><a href="">滨州检务综合分析管理系统</a></h1>-->
+                    <!--<p>负责系统界面、ECharts图形、调用finereport自动生成表格和图形、</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-sm-12 experience">-->
+                <!--<div class="col-sm-6">-->
+                    <!--<h1><a href="">广元司法干预活动通报</a></h1>-->
+                    <!--<p>负责系统界面还原、处理IE6+浏览器的兼容性</p>-->
+                <!--</div>-->
+                <!--<div>-->
+                    <!--<h1><a href="">电子卷宗管理系统</a></h1>-->
+                    <!--<p>负责系统界面还原、页面交互</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--技能-->
+        <!--<div ng-if="data.current == 3" class="col-sm-12">-->
+            <!--<div class="xiangmu"><h1>擅长技术</h1></div>-->
+            <!--<div class="tag-panel">-->
+                <!--<div class="tag about_expert">CSS</div>-->
+                <!--<div class="tag about_familiar">CSS3</div>-->
+                <!--<div class="tag ">SCSS</div>-->
+            <!--</div>-->
+            <!--<div class="tag-panel">-->
+                <!--<div class="tag about_expert">JavaScript</div>-->
+                <!--<div class="tag about_familiar">Jquery</div>-->
+                <!--<div class="tag about_Three">angular</div>-->
+                <!--<div class="tag">vue</div>-->
+            <!--</div>-->
+            <!--<div class="tag-panel">-->
+                <!--<div class="tag about_expert">Bootstrap</div>-->
+                <!--<div class="tag about_familiar">LigerUI</div>-->
+                <!--<div class="tag">easyUi</div>-->
+            <!--</div>-->
+            <!--<div class="tag-panel">-->
+                <!--<div class="tag about_expert">ECharts</div>-->
+                <!--<div class="tag about_familiar">Html5</div>-->
+                <!--<div class="tag">node</div>-->
+            <!--</div>-->
+            <!--<div class="tag-panel">-->
+                <!--<div class="tag about_expert">grunt</div>-->
+                <!--<div class="tag about_familiar">webpack</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--教育-->
+        <!--<div ng-if="data.current == 4" class="col-sm-12 jiaoyu">-->
+            <!--<div class="xiangmu"><h1>教育背景</h1></div>-->
+            <!--<h2>内江职业技术学院 大专</h2>-->
+            <!--<h3 class="jiaoyu_color">电子信息工程</h3>-->
+            <!--<h3>2015年6月毕业</h3>-->
+            <!--<h3 class="jiaoyu_color">电子电工技术、电路板制作设计、单片机编程</h3>-->
+        <!--</div>-->
+
+        <!--联系-->
+        <div ng-if="data.current == 1" class="col-sm-12 lianxi">
+            <div class="xiangmu"><h1>了解更多</h1></div>
+            <h3>Email:<span>zsy123z@sina.com</span></h3>
+            <h3>Telephone:<span>15202839285</span></h3>
+            <h2><a href="">下载简历</a></h2>
+            <div class="contact-panel">
+                <!--<a href="https://github.com/zsyzsy" class="git"></a>-->
+                <a href="http://www.cnblogs.com/zsy0712/" class="bokeyuan"></a>
             </div>
         </div>
+
     </div>
 </div>
 
