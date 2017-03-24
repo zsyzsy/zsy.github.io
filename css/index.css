@@ -3,77 +3,11 @@
 /*body {*/
 /*cursor: url('some-cursor.ico'), default;*/
 /*}*/
+html.ng-scope {
+    height: 100%;
+}
 .banner{
-    height: 170px;
-    background: url("../images/banner_top.jpg")no-repeat;
+    background: url("../images/bg-1.jpg")no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
-}
-.banner_left{
-    height: 170px;
-}
-div#myContent {
-    margin: 0;
-    padding: 0;
-}
-#myContent{
-    line-height: 19px;
-    color: #756F71;
-}
-.banner_right{
-    height: 170px;
-}
-.banner_right .head{
-    font-family: 'alex_brushregular';
-}
-.avatar{
-    width: 130px;
-    height: 130px;
-    margin: 1% auto;
-    overflow: hidden;
-    border: #FFF 4px solid;
-    border-radius: 100%;
-}
-.avatar a {
-    display: block;
-    padding-top: 97px;
-    width: 160px;
-    background: url("../images/avatar.png") no-repeat;
-    background-size: 130px 130px;
-}
-a:link, a:visited {
-    text-decoration: none;
-    color: #333;
-}
-.avatar a:hover span {
-    margin-top: -7px;
-    display: block;
-}
-.avatar a span {
-    display: block;
-    margin-top: 63px;
-    padding-top: 4px;
-    width: 130px;
-    height: 55px;
-    text-align: center;
-    line-height: 20px;
-    color: #fff;
-    background: rgba(0, 0, 0, .5);
-    -webkit-transition: margin-top .2s ease-in-out;
-    -moz-transition: margin-top .2s ease-in-out;
-    -o-transition: margin-top .2s ease-in-out;
-    transition: margin-top .2s ease-in-out;
-}
-
-
-
-.index_content {
-    width: 1000px;
-    margin: 0 auto;
-}
-nav.navbar {
-    margin: 0;
-}
-ul.nav {
-    height: 50px;
 }

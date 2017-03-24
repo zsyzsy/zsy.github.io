@@ -6,14 +6,10 @@ var appModule = angular.module('scotchApp', ['ngRoute']);
 appModule.config(function($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl : 'pages/home.html',
+            templateUrl : 'pages/about.html',
             controller  : 'mainController'
         })
 
-        .when('/about', {
-            templateUrl : 'pages/about.html',
-            controller  : 'aboutController'
-        })
 
         .when('/contact', {
             templateUrl : 'pages/contact.html',
@@ -22,9 +18,6 @@ appModule.config(function($routeProvider) {
 
         .otherwise('/');
 });
-
-var mainCtrl = function($scope){
-};
 
 var aboutCtrl = function($scope,$rootScope){
     $rootScope.data = {
@@ -42,6 +35,5 @@ var contactCtrl = function($scope){
 };
 
 
-appModule.controller('mainController', mainCtrl);
-appModule.controller('aboutController', aboutCtrl);
+appModule.controller('mainController', aboutCtrl);
 appModule.controller('contactController', contactCtrl);
