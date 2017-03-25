@@ -2,12 +2,13 @@
     overflow: hidden;
     border-radius: 5px;
 }
-.about_content .about_box{
+.about_content .about_box {
     background: rgba(0, 0, 0, 0.85);
     height: 500px;
-    margin-top: 10%;
     color: white;
     border-radius: 10px;
+    max-width: 800px;
+    margin: 10% auto;
 }
 .about_box ul {
     max-width: 620px;
@@ -51,7 +52,7 @@
     text-align: right;
 }
 .Job_time h1{
-    font-size: 100px;
+    font-size: 5rem;
     color: #17e7a4;
     font-weight: 400;
     margin: 0;
@@ -75,9 +76,13 @@
 .experience {
     margin-top: 20px;
 }
+.experience h1 {
+    font-size: 1.5rem;
+}
 .experience h1 a{
     color: #17e7a4;
 }
+
 .experience h1 a:hover{
     text-decoration:underline;
 }
@@ -121,6 +126,23 @@
 }
 .jiaoyu .jiaoyu_color{
     color: #aee2d9;
+}
+
+/*实习、供职*/
+h1.xiangmu {
+    margin-top: 15%;
+    text-shadow: 1px 2px #080808, 2px 4px #586361;
+    text-align: center;
+}
+.renzhi h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+.renzhi p {
+    line-height: 60px;
+    text-align: center;
+    font-size: 1rem;
 }
 
 

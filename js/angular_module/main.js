@@ -11,9 +11,9 @@ appModule.config(function($routeProvider) {
         })
 
 
-        .when('/contact', {
-            templateUrl : 'pages/contact.html',
-            controller  : 'contactController'
+        .when('/dzjz', {
+            templateUrl : 'pages/dzjz.html',
+            controller  : 'dzjzController'
         })
 
         .otherwise('/');
@@ -31,9 +31,9 @@ var aboutCtrl = function($scope,$rootScope){
     }
 };
 
-var contactCtrl = function($scope){
+var dzjzCtrl = function($scope){
 };
 
 
 appModule.controller('mainController', aboutCtrl);
-appModule.controller('contactController', contactCtrl);
+appModule.controller('dzjzController', dzjzCtrl);

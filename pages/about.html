@@ -6,8 +6,7 @@
 </head>
 <body>
 <div class="col-sm-12 about_content">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8 about_box">
+    <div class="about_box">
         <ul>
             <li ng-class="{ 'active' : data.current == 1 }" ng-click="actions.setCurrent(1)">简介</li>
             <li ng-class="{ 'active' : data.current == 2 }" ng-click="actions.setCurrent(2)">项目</li>
@@ -41,22 +40,32 @@
             <div class="xiangmu"><h1>项目经验</h1></div>
             <div class="col-sm-12 experience">
                 <div class="col-sm-6">
-                    <h1><a href="">电商网站</a></h1>
+                    <h1><a href="https://github.com/zsyzsy/node-angular-bootstrap">电商网站</a></h1>
                     <p>负责网站界面还原、node+mysql搭建数据进行页面交互</p>
                 </div>
                 <div class="col-sm-6">
                     <h1><a href="">滨州检务综合分析管理系统</a></h1>
-                    <p>负责系统界面、ECharts图形、调用finereport自动生成表格和图形、</p>
+                    <p>负责系统界面、ECharts图形、调用finereport自动生成表格和图形</p>
                 </div>
             </div>
             <div class="col-sm-12 experience">
                 <div class="col-sm-6">
+                    <h1><a href="http://zhangsy.online/siChuanWeiXin/">四川检查微信推广</a></h1>
+                    <p>负责手机界面效果、处理部分手机及兼容性</p>
+                </div>
+                <div class="col-sm-6">
                     <h1><a href="">广元司法干预活动通报</a></h1>
                     <p>负责系统界面还原、处理IE6+浏览器的兼容性</p>
                 </div>
-                <div>
-                    <h1><a href="">电子卷宗管理系统</a></h1>
+            </div>
+            <div class="col-sm-12 experience">
+                <div class="col-sm-6">
+                    <h1><a href="#/dzjz">电子卷宗管理系统</a></h1>
                     <p>负责系统界面还原、页面交互</p>
+                </div>
+                <div class="col-sm-6">
+                    <h1><a href="http://zhangsy.online/h5_zhaoping">2017雅达尔招聘</a></h1>
+                    <p>负责手机界面效果、处理部分手机及兼容性</p>
                 </div>
             </div>
         </div>
@@ -98,6 +107,20 @@
             <h3 class="jiaoyu_color">电子信息工程</h3>
             <h3>2015年6月毕业</h3>
             <h3 class="jiaoyu_color">电子电工技术、电路板制作设计、单片机编程</h3>
+        </div>
+
+        <!--实习经验-->
+        <div ng-if="data.current == 5" class="col-sm-12 renzhi">
+            <h1 class="xiangmu">重庆拓诊信息技术有限公司</h1>
+            <h3>任职:web前端开发工程师</h3>
+            <p>负责PC界面和数据交互</p>
+        </div>
+
+        <!--供职-->
+        <div ng-if="data.current == 6" class="col-sm-12 renzhi">
+            <h1 class="xiangmu">四川雅达尔科技有限公司</h1>
+            <h3>任职:web前端开发工程师</h3>
+            <p>负责PC界面和数据交互、ECharts图形</p>
         </div>
 
         <!--联系-->
