@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="scotchApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--自定义Alex字体样式-->
+    <link rel="stylesheet" href="webfontkit/specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="webfontkit/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body ng-controller="mainController" class="banner">
+    <div class="col-sm-12">
+
+            <div id="main">
+                <div ng-view></div>
+            </div>
+    </div>
+    <!--</div>-->
+
+
+<script src="js/angular_module/angular.min.js"></script>
+<script src="js/angular_module/angular-route.min.js"></script>
+<script src="js/angular_module/main.js"></script>
+
+
+</body>
+</html>
